@@ -3,7 +3,7 @@ import {View} from 'react-native';
 
 import {storiesOf} from '@storybook/react-native';
 
-import Avatar from '../components/Avatar.js';
+import Avatar from '../../components/Avatar.js';
 
 const AvatarStories = storiesOf('Avatar', module);
 

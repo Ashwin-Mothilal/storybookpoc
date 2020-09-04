@@ -1,9 +1,4 @@
-import React from 'react';
-import {SafeAreaView, StatusBar, View} from 'react-native';
-import Avatar from './scripts/components/Avatar';
-import Button from './scripts/components/Button';
-
-const App = () => {
+/*const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -23,4 +18,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default App;*/
+import StorybookUIRoot from './scripts/storybook';
+
+export default StorybookUIRoot;

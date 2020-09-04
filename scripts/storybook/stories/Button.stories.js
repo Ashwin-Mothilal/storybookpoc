@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react-native';
 
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
 import {View} from 'react-native';
 
