@@ -9,6 +9,10 @@ const AvatarStories = storiesOf('Avatar', module);
 
 AvatarStories.add('Default', () => (
   <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-    <Avatar />
+    <Avatar
+      uri={
+        'https://webneel.com/daily/sites/default/files/images/daily/05-2018/portrait-photography-by-dennis-drozhzhin.jpg'
+      }
+    />
   </View>
 ));
