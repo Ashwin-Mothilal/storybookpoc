@@ -3,3 +3,7 @@ export const SECONDARY_COLOR = '#d49a89';
 export const TEXT_COLOR = '#ffffff';
 export const BACKGROUND_COLOR = '#f4f4f4';
 export const HEADING_COLOR = '#434343';
+export const SUCCESS = 'green';
+export const DANGER = 'red';
+export const WARNING = 'orange';
+export const GREY = 'grey';

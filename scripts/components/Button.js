@@ -1,12 +1,46 @@
+import propTypes from 'prop-types';
 import React from 'react';
 import {StyleSheet, Text} from 'react-native';
 import {RectButton} from 'react-native-gesture-handler';
-import {PRIMARY_COLOR, SECONDARY_COLOR, TEXT_COLOR} from '../Themes/light';
-import propTypes from 'prop-types';
+import {
+  DANGER,
+  GREY,
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+  SUCCESS,
+  TEXT_COLOR,
+  WARNING,
+} from '../Themes/light';
 
 const BUTTON_TYPES = {
   PRIMARY: 'Primary',
   SECONDARY: 'Secondary',
+  DANGER: 'Danger',
+  WARNING: 'Warning',
+  SUCCESS: 'Success',
+  DEFAULT: 'Default',
+};
+
+const getButtonBackgroundColorFromType = (type) => {
+  let backgroundColor = GREY;
+  switch (type) {
+    case BUTTON_TYPES.PRIMARY:
+      backgroundColor = PRIMARY_COLOR;
+      break;
+    case BUTTON_TYPES.SECONDARY:
+      backgroundColor = SECONDARY_COLOR;
+      break;
+    case BUTTON_TYPES.DANGER:
+      backgroundColor = DANGER;
+      break;
+    case BUTTON_TYPES.WARNING:
+      backgroundColor = WARNING;
+      break;
+    case BUTTON_TYPES.SUCCESS:
+      backgroundColor = SUCCESS;
+      break;
+  }
+  return backgroundColor;
 };
 
 const Button = ({type, text, onPress}) => {
@@ -15,9 +49,7 @@ const Button = ({type, text, onPress}) => {
       onPress={onPress}
       style={[
         ButtonStyles.container,
-        type === BUTTON_TYPES.PRIMARY
-          ? {backgroundColor: PRIMARY_COLOR}
-          : {backgroundColor: SECONDARY_COLOR},
+        {backgroundColor: getButtonBackgroundColorFromType(type)},
       ]}>
       <Text style={ButtonStyles.textStyles}>{text}</Text>
     </RectButton>
