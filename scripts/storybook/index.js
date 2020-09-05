@@ -1,4 +1,5 @@
 import {configure, getStorybookUI} from '@storybook/react-native';
+import './rn-addons';
 
 configure(() => {
   require('./stories');
