@@ -10,8 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@storybook/addon-actions": "^6.0.21",
-    "@storybook/addon-knobs": "^6.0.21",
+    "@storybook/addon-actions": "^5.3.21",
+    "@storybook/addon-knobs": "^5.3.21",
     "@storybook/addon-ondevice-actions": "^5.3.21",
     "@storybook/addon-ondevice-knobs": "^5.3.21",
     "react": "16.13.1",
