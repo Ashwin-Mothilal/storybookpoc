@@ -2,12 +2,25 @@
   "plugins": [
     {
       "name": "@zeplin/cli-connect-react-plugin"
+    },
+    {
+      "name": "@zeplin/cli-connect-storybook-plugin",
+      "config": {
+        "url": "http://localhost:8081"
+      }
     }
   ],
   "components": [
     {
       "path": "scripts/components/Button.js",
-      "zeplinNames": ["Primary", "Secondary", "Default", "Warning", "Success", "Danger"]
+      "zeplinNames": [
+        "Primary",
+        "Secondary",
+        "Default",
+        "Warning",
+        "Success",
+        "Danger"
+      ]
     }
   ],
   "projects": ["5f3e735a20b5a22fe32ffadf"]
